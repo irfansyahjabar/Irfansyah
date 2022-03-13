@@ -1,0 +1,24 @@
+#kalkulator
+nilai1 = int(input("masukan angka pertama:"))
+nilai2 = int(input("masukan angka kedua:"))
+
+print('''pilihan kode operasi
+a. Penjumlahan
+b. Pengurangan
+c. Perkalian
+d. Pembagian''')
+
+operasi = input("masukan kode operasi:")
+
+if operasi == "a":
+   hasil = nilai1 + nilai2
+elif operasi == "b":
+   hasil = nilai1 - nilai2
+elif operasi == "c":
+   hasil = nilai1 * nilai2
+elif operasi == "d":
+   hasil = nilai1 / nilai2
+
+else:
+   hasil = "tidak terdefinisi"
+print("hasil operasi: {}". format (hasil))
