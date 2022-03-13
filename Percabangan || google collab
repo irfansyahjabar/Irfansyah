@@ -1,0 +1,17 @@
+#percabangan if
+umur = 12
+if (umur >= 15):
+    print ("remaja")
+else:
+    print ("belum remaja")
+
+#percabangan elif
+
+nilai = 78
+if (nilai > 75 and nilai < 80):
+    print ("lulus")
+elif (nilai > 81 and nilai < 90):
+    print ("lulus")
+
+else:
+    print ("tidak lulus")
