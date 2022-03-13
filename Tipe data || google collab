@@ -1,0 +1,22 @@
+#tipe data string
+nama = "aco"
+print(nama)
+print(type(nama))
+
+#tipe data integer
+umur = "10"
+print(umur)
+print(type(10))
+
+#tipe data float
+tinggi_badan = "1.1"
+print(tinggi_badan)
+print(type(1.1))
+
+#tipe data boolean
+aco_tinggi = False
+if aco_tinggi == True:
+   print("betul aco tinggi")
+else:
+   print("aco tidak tinggi")
+print(type(True))
