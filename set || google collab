@@ -1,0 +1,24 @@
+set ={"nama",145,2.56,True}
+for i in (set):
+   print(i)
+
+#menghapus nilai pada set
+#remove, discard, dan clear
+#remove
+set.remove("nama")
+print(set)
+#discard
+set.discard(145)
+print(set)
+#clear
+set.clear()
+print(set)
+
+#menambahkan nilai pada set
+#add dan update
+#add
+set.add("jaya")
+print(set)
+#update
+set.update(["sentosa","indah"])
+print(set)
