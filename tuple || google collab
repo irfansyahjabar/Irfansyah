@@ -1,0 +1,33 @@
+#tuple
+anime=["naruto","goku","sitama","deku"]
+for i in (anime):
+   print(i)
+
+#mengupdate value pada tuple
+tup = list(anime)
+tup [2] = "sasuke"
+print(tup)
+
+#menghapus value pada tuple
+#del, remove, dan pop
+#del
+del tup[1]
+print(tup)
+#remove
+tup.remove("naruto")
+print(tup)
+#pop
+tup.pop()
+print(tup)
+
+#menambahkah value pada tuple
+#append, extend, dan insert
+#append
+tup.append("yami")
+print(tup)
+#extend
+tup.extend(["niku","kurama"])
+print(tup)
+#insert
+tup.insert(0,"dragon")
+print(tup)
