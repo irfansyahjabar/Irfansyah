@@ -1,0 +1,32 @@
+#list
+daftar=["ani","ina","nur","nurul"]
+for i in (daftar):
+   print(i)
+
+#update value pada list
+daftar [0] = "rahmat"
+print(daftar)
+
+#menghapus value pada list
+#del,remove,dan pop
+#del
+del daftar [1]
+print(daftar)
+#remove
+daftar.remove("nur")
+print(daftar)
+#pop
+daftar.pop()
+print(daftar)
+
+#menambahkan value pada list
+#extend,append,dan insert
+#extend
+daftar.extend(["udin"])
+print(daftar)
+#append
+daftar.append("mansur")
+print(daftar)
+#insert
+daftar.insert(1,"narmi")
+print(daftar)
