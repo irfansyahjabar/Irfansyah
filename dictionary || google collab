@@ -1,0 +1,15 @@
+kamus ={"buku":"book","pena":"pen"}
+for key in (kamus):
+   print(key,kamus[key])
+
+#mengupdate
+kamus ["buku"] = "kertas"
+print(kamus)
+
+#menghapus
+kamus.pop("buku")
+print(kamus)
+
+#menambahkan
+kamus ["pintu"] = "door"
+print(kamus)
