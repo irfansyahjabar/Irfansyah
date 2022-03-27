@@ -1,0 +1,63 @@
+brg =[]
+perintah = 0
+while perintah != 7:
+   print('''1. menambah
+2. menghapus
+3. mengedit
+4. menampilkan
+5. cari barang
+6. cari index
+7. keluar''')
+   perintah = int(input("masukan perintah:"))
+
+   if perintah == 1:
+      while True:
+         elem=input ("masukan barang:")
+         brg.append(elem)
+
+         stop = input ("ketikan s untuk berhenti selainnya lanjut:")
+         if stop == 's':
+            break
+    
+   elif perintah == 2:
+      while True:
+         hps=int(input ("masukan index yang ingin di hapus:"))
+         if hps > (len(brg)-1):
+             print("index tidak ditemukan")
+         else:
+             print(brg.pop(hps), "dihapus")
+
+         stop = input ("ketikan s untuk berhenti selainnya lanjut:")
+         if stop == 's':
+            break
+
+   elif perintah == 3:
+      while True:
+        edit=int(input("masukan index yang akan di edit:"))
+        if edit> (len(brg)-1):
+             print("index tidak ditemukan")
+        else:
+             brg [edit] = input("masukan barang yang baru:")
+
+        stop = input ("ketikan s untuk berhenti selainnya lanjut:")
+        if stop == 's':
+            break
+
+   elif perintah == 4:
+      for i in range(len(brg)):
+         print(brg[i])
+
+   elif perintah == 5:
+      cari = input ("masukan barang yang dicek:")
+      for i in range(len(brg)):
+          if brg [i] == cari:
+             print("barang ditemukan dalam list!!")
+          else:
+             print("barang tidak ditemukan")
+
+   elif perintah == 6:
+      cari2 = input("masukan barang yang dicari:")
+      if cari2 in brg:
+         print (f"{cari2} ada pada index ke-{brg.index(cari2)}")
+      else:
+         print ("index tidak ditemukan")
